@@ -2,7 +2,7 @@
 
 ## Currency converter app
 
-This is my second flutter app and I'm loving it.
+This is my third flutter app and its a shopping app.
 
 A heartly thanks to [Rivaan Ranawat](https://www.youtube.com/watch?v=CzRQ9mnmh44), the creator of the tutorial on yt without whom this project would never have been possible.
 
