@@ -50,28 +50,27 @@ class _ProductsDetailsPageState extends State<ProductsDetailsPage> {
               SizedBox(
                 height: 50,
                 child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: (widget.product['sizes'] as List).length,
-                  itemBuilder: ((context, index) {
-                    final size = (widget.product["sizes"] as List)[index];
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            selectedSize = size;
-                          });
-                        },
-                        child: Chip(
-                          label: Text("$size"),
-                          backgroundColor: selectedSize == size
-                              ? Theme.of(context).colorScheme.primary
-                              : const Color.fromRGBO(245, 247, 249, 1),
+                    scrollDirection: Axis.horizontal,
+                    itemCount: (widget.product['sizes'] as List).length,
+                    itemBuilder: ((context, index) {
+                      final size = (widget.product["sizes"] as List)[index];
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedSize = size;
+                            });
+                          },
+                          child: Chip(
+                            label: Text("$size"),
+                            backgroundColor: selectedSize == size
+                                ? Theme.of(context).colorScheme.primary
+                                : const Color.fromRGBO(245, 247, 249, 1),
+                          ),
                         ),
-                      ),
-                    );
-                  }),
-                ),
+                      );
+                    })),
               ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
