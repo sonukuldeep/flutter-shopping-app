@@ -33,19 +33,11 @@ git clone
 flutter run
 ```
 
-### Environment file Example
-```txt
-API_URL=xyzabc...
-```
-Note .env file is required containing an api key from openweathermap
-
-Place the .env file in the root of the folder
-
 ## Important files
 ```css
 lib
 ├── main.dart
-└── weather_scrren.dart
+└── pages/home_page.dart
 ```
 
 ## Badges
